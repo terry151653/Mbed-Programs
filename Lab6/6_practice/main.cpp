@@ -1,15 +1,15 @@
 #include "mbed.h"
 using namespace std::chrono;
-
-void blink_led2()
+DigitalOut led(LED3);
+void blink_led()
 {
-    led2 = !led2;
+    led = !led;
 }
 
 int main()
 {
     Ticker ledTicker;
-    ledTicker.attach(&blink_led2, 1s);
+    ledTicker.attach(&blink_led, 500ms);
 
     while (1)
     {

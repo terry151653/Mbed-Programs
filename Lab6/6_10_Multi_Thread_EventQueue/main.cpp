@@ -18,7 +18,7 @@ void rise_handler(void)
 }
 */
 void rise_handler_user_context(void) {
-    printf("rise_handler_user_context in context %p\r\n", Thread::gettid());
+    printf("rise_handler_user_context in context %p\r\n", ThisThread::get_id());
 }
 
 void rise_handler(void) {
