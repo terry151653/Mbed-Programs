@@ -28,4 +28,9 @@ int main() {
 	  	ThisThread::sleep_for(1s);
 	}
 	printf("Done.\n");
+    while (1)
+    {
+        printf("Done.\n");
+        ThisThread::sleep_for(1s);
+    }
 }
