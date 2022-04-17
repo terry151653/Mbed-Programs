@@ -1,0 +1,12 @@
+/*!
+ * You can write copyrights rules here. These rules will be copied into the outputs.
+ */
+
+//@outputDir("erpc_outputs") // output directory
+
+program blink_led; // specify name of output files
+
+interface LEDBlinkService // cover functions for same topic
+{
+    led3_change(void) -> void
+}
