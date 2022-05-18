@@ -1,0 +1,8 @@
+program bbcar_control; // specify name of output files
+
+interface BBCarService // cover functions for same topic
+{
+   stop(in uint8 car) -> void //car is an index to a BBCar object
+   goStraight(in uint8 car, in int32 speed) -> void
+   turn(in uint8 car, in int32 speed, in double factor) -> void
+}
