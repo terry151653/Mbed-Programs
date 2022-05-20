@@ -35,13 +35,13 @@ int main()
         pattern.input(); wait_us(230);
         switch (pattern)
         {
-            case 0b1000: car.turn(15, -0.1); printf("1\n"); break;
-            case 0b1100: car.turn(15, -0.3); printf("2\n");break;
-            case 0b0100: car.turn(15, -0.6); printf("3\n");break;
+            case 0b1000: car.turn(15, 0.1); printf("1\n"); break;
+            case 0b1100: car.turn(15, 0.3); printf("2\n");break;
+            case 0b0100: car.turn(15, 0.6); printf("3\n");break;
             case 0b0110: car.goStraight(15); printf("4\n");break;
-            case 0b0010: car.turn(15, 0.6); printf("5\n");break;
-            case 0b0011: car.turn(15, 0.3); printf("6\n");break;
-            case 0b0001: car.turn(15, 0.1); printf("7\n");break;
+            case 0b0010: car.turn(15, -0.6); printf("5\n");break;
+            case 0b0011: car.turn(15, -0.3); printf("6\n");break;
+            case 0b0001: car.turn(15, -0.1); printf("7\n");break;
             case 0b0000: printf("9\n");break;
             case 0b1111: printf("10\n");break;
             default:car.goStraight(15);printf("8\n");
